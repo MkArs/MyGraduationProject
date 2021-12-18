@@ -1,0 +1,503 @@
+fileFormatVersion: 2
+guid: e5de975db3b1ece43b3f337e89d3a138
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8668364889562399580
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_0
+  - first:
+      213: -7834340118195913915
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_1
+  - first:
+      213: 7452029399597416577
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_2
+  - first:
+      213: 1587611455108418431
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_3
+  - first:
+      213: -1277244359750039208
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_4
+  - first:
+      213: 818586275019912394
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_5
+  - first:
+      213: -2676172800242368650
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_6
+  - first:
+      213: -2941869963875690929
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_7
+  - first:
+      213: 5037463312457063478
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_8
+  - first:
+      213: 4355710325165391803
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_9
+  - first:
+      213: 4984890094805056004
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_10
+  - first:
+      213: 9204349217221151072
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_11
+  - first:
+      213: -4916589688633667691
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_12
+  - first:
+      213: 6794936588524904451
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_13
+  - first:
+      213: 6183897889818193242
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_14
+  - first:
+      213: -631596622798439929
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_15
+  - first:
+      213: 6879472567651972074
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_16
+  - first:
+      213: -5296272675825841472
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_17
+  - first:
+      213: 7830173604600424651
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_18
+  - first:
+      213: -963306130275606469
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_19
+  - first:
+      213: 5221768892497912377
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_20
+  - first:
+      213: -2290962475154429319
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_21
+  - first:
+      213: -8519987343797041240
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_22
+  - first:
+      213: -8159369639517667774
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_23
+  - first:
+      213: -806649193179039509
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_24
+  - first:
+      213: -6106842137750298989
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_25
+  - first:
+      213: 3457049738789033439
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_26
+  - first:
+      213: 8049525371025954216
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_27
+  - first:
+      213: -7585636011393470876
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_28
+  - first:
+      213: 5549941622489014335
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_29
+  - first:
+      213: 1222288068619224287
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_30
+  - first:
+      213: -2930494110937557862
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_31
+  - first:
+      213: -1675229539694265297
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_32
+  - first:
+      213: -3687192255205558494
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_33
+  - first:
+      213: 66063220698601680
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_34
+  - first:
+      213: 5209319203860923632
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_35
+  - first:
+      213: 9203492780905358694
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_36
+  - first:
+      213: 1148099771160754865
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_37
+  - first:
+      213: 2141402400715195992
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_38
+  - first:
+      213: 6140357437801516475
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_39
+  - first:
+      213: 5935784069941359047
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_40
+  - first:
+      213: 1207504113130301074
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_41
+  - first:
+      213: 5196806226662096982
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_42
+  - first:
+      213: -4939151403570317540
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_43
+  - first:
+      213: -4519712553886027623
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_44
+  - first:
+      213: 3289206703683772478
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_45
+  - first:
+      213: 4973128852951606432
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_46
+  - first:
+      213: -3892205670393834777
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_47
+  - first:
+      213: -1365581911987592472
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_48
+  - first:
+      213: -7348230162901611558
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_49
+  - first:
+      213: 4110032685418290867
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_50
+  - first:
+      213: 8010511371669628104
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_51
+  - first:
+      213: 1416419526146999454
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_52
+  - first:
+      213: 6657172994643764251
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_53
+  - first:
+      213: 817816962510986135
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_54
+  - first:
+      213: 486022386656084178
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_55
+  - first:
+      213: 1217218817202601160
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_56
+  - first:
+      213: 1826800761049046214
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_57
+  - first:
+      213: -3934246739373610855
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_58
+  - first:
+      213: -5612930541888531779
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_59
+  - first:
+      213: 7760326257327773866
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_60
+  - first:
+      213: -6195738798617282313
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_61
+  - first:
+      213: 6186057290796722844
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_62
+  - first:
+      213: 3086124823525871568
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_63
+  - first:
+      213: -7852709101140178060
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_64
+  - first:
+      213: -3628520461264955165
+    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_65
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 197
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac3a265f08c3b780800000000000000
+      internalID: -8668364889562399580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 165
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc829d7486d5aac60800000000000000
+      internalID: 7830173604600424651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 164
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3067f6ad26a1a2f0800000000000000
+      internalID: -963306130275606469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_20
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 165
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932e5804423777840800000000000000
+      internalID: 5221768892497912377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_21
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 164
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97aaba254cdd430e0800000000000000
+      internalID: -2290962475154429319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 165
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a74722d6ace2c980800000000000000
+      internalID: -8519987343797041240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_23
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 164
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e31750b8814ce80800000000000000
+      internalID: -8159369639517667774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 165
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8353625d43ec4f0800000000000000
+      internalID: -806649193179039509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_25
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 164
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e91006e63204ba0800000000000000
+      internalID: -6106842137750298989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

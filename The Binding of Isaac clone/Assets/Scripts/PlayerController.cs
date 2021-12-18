@@ -2,9 +2,7 @@
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
-{
-    private Rigidbody2D _rigidbody;
-    private float _lastTear;
+{    
     [SerializeField]
     private float _speed;
     [SerializeField]
@@ -17,7 +15,11 @@ public class PlayerController : MonoBehaviour
     private float _tearDelay;
     [SerializeField]
     private float _range;
+    [SerializeField]
+    private Transform _head;
 
+    private Rigidbody2D _rigidbody;
+    private float _lastTear;
     private int _collectedAmount = 0;
 
     public int CollectedAmount { get => _collectedAmount; set => _collectedAmount = value; }
@@ -37,19 +39,20 @@ public class PlayerController : MonoBehaviour
 
         float shootHorizontal = Input.GetAxis("ShootHorizontal");
         float shootVertical = Input.GetAxis("ShootVertical");
+
         if((shootHorizontal != 0f || shootVertical != 0f) && Time.time > _lastTear + _tearDelay)
         {
             Shoot(shootHorizontal, shootVertical);
             _lastTear = Time.time;
         }
 
-        _rigidbody.velocity = new Vector3(horizontal * _speed, vertical * _speed, 0f);
+        _rigidbody.velocity = new Vector2(horizontal * _speed, vertical * _speed);
         _collectedText.text = "Items collected: " + CollectedAmount;
     }
 
     private void Shoot(float x, float y)
     {
-        GameObject tear = Instantiate(_tearPrefab, transform.position, transform.rotation) as GameObject;
+        GameObject tear = Instantiate(_tearPrefab, _head.transform.position, _head.transform.rotation) as GameObject;
         tear.AddComponent<Rigidbody2D>().gravityScale = 0f;
         tear.GetComponent<Rigidbody2D>().velocity = new Vector2(
             (x < 0) ? Mathf.Floor(x) * _shotSpeed : Mathf.Ceil(x) * _shotSpeed,
