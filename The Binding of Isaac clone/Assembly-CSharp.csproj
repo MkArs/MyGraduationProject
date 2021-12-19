@@ -64,7 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CollectionController.cs" />
+    <Compile Include="Assets\Scripts\BaseChaser.cs" />
+    <Compile Include="Assets\Scripts\BaseEnemy.cs" />
+    <Compile Include="Assets\Scripts\CollisionController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\TearController.cs" />
     <Reference Include="UnityEngine">

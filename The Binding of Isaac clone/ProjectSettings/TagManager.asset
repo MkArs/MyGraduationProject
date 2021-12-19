@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -41,9 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: PlayerBody
+  - name: Creature
+    uniqueID: 1616972539
+    locked: 0
+  - name: CreatureBody
     uniqueID: 2313800545
     locked: 0
-  - name: PlayerHead
+  - name: CreatureHead
     uniqueID: 2043468401
     locked: 0
