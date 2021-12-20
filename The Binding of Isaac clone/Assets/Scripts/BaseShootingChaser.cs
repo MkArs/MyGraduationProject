@@ -91,6 +91,7 @@ namespace IsaacClone
         {
             GameObject tear = Instantiate(_tearPrefab, transform.position, Quaternion.identity) as GameObject;
             tear.AddComponent<Rigidbody2D>().gravityScale = 0f;
+            tear.GetComponent<TearController>().ShotSpeed = _shotSpeed;
         }
     }
 }

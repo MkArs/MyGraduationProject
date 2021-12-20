@@ -162,6 +162,7 @@ MonoBehaviour:
   _attackRange: 0
   _speed: 0
   _attackDependency: 1
-  _tearPrefab: {fileID: 2745936300190318450, guid: 4d04729a9bb464c4792604dc21beec4c,
+  _tearPrefab: {fileID: 2745936300190318450, guid: d171b54e76ee15d4d970b97432bbd8eb,
     type: 3}
-  _attackDelayForTimed: 0
+  _stopDelayBeforeAttacking: 0
+  _shotSpeed: 0

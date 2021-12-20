@@ -6,6 +6,7 @@ namespace IsaacClone
     {
         private GameObject _player;
         private float _travelDistance = 0f;
+        private float _shotSpeed = 0f;
         private Vector2 _startPosition;
         private Vector2 _lastPosition;
         private Vector2 _playerPosition;
@@ -13,6 +14,7 @@ namespace IsaacClone
         private TearSourceType _tearSource;
 
         public TearSourceType TearSource { get => _tearSource; set => _tearSource = value; }
+        public float ShotSpeed { get => _shotSpeed; set => _shotSpeed = value; }
 
         // Start is called before the first frame update
         void Start()
@@ -29,7 +31,7 @@ namespace IsaacClone
             if (_tearSource == TearSourceType.enemy)
             {
                 _startPosition = transform.position;
-                transform.position = Vector2.MoveTowards(transform.position, _playerPosition, 5f * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, _playerPosition, ShotSpeed * Time.deltaTime);
 
                 if (_startPosition == _lastPosition)
                 {
