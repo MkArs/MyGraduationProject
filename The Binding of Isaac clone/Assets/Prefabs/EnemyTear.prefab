@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2968617488355047713}
   - component: {fileID: -4624106484622244090}
   m_Layer: 0
-  m_Name: Tear
+  m_Name: EnemyTear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 46fd9daec2981844895fbddd63755437, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.07075471, b: 0.07075471, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68923df8ef7f4224fb929f823246d0f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tearSource: 1
 --- !u!58 &-4624106484622244090
 CircleCollider2D:
   m_ObjectHideFlags: 0
