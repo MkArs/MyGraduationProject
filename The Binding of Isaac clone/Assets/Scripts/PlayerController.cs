@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +10,21 @@ namespace IsaacClone
         [SerializeField]
         private float _speed;
         [SerializeField]
-        private Text _collectedText;
+        private Text _txtCoinsAmount;
+        [SerializeField]
+        private Text _txtKeysAmount;
+        [SerializeField]
+        private Text _txtBombsAmount;
         [SerializeField]
         private GameObject _tearPrefab;
+        [SerializeField]
+        private GameObject _bombPrefab;
         [SerializeField]
         private float _shotSpeed;
         [SerializeField]
         private float _tearDelay;
+        [SerializeField]
+        private float _bombDelay = 2f;
         [SerializeField]
         private float _range;
         [SerializeField]
@@ -26,10 +35,21 @@ namespace IsaacClone
         private float _invincibilityDuration = 1f;
         [SerializeField]
         private float _damage = 3.5f;
+        [SerializeField]
+        private float _explosionDamage = 75f;
+        [SerializeField]
+        private float _timeBeforeBombExplosion = 2f;
 
+        private const int _maxBombsAmount = 99;
+        private const int _maxKeysAmount = 99;
+        private const int _maxCoinsAmount = 99;
+
+        private int _bombsAmount = 0;
+        private int _keysAmount = 0;
+        private int _coinsAmount = 0;
         private Rigidbody2D _rigidbody;
         private float _lastTear;
-        private int _collectedAmount = 0;
+        private float _lastBomb;
         private bool _isInvincible = false;
 
         public float Health
@@ -56,10 +76,72 @@ namespace IsaacClone
             }
         }
 
-        public int CollectedAmount { get => _collectedAmount; set => _collectedAmount = value; }
         public float Range { get => _range; set => _range = value; }
         public bool IsInvincible { get => _isInvincible; set => _isInvincible = value; }
         public float Damage { get => _damage; set => _damage = value; }
+
+        public int BombsAmount {
+            get
+            {
+                return _bombsAmount;
+            }
+            set
+            {
+                if (value < _maxBombsAmount)
+                {
+                    _bombsAmount = value;
+                    AddAndShowPickupAmount(_bombsAmount, _txtBombsAmount);
+                }
+                else
+                {
+                    _bombsAmount = _maxBombsAmount;
+                    AddAndShowPickupAmount(_bombsAmount, _txtBombsAmount);
+                }
+            }
+        }
+
+        public int KeysAmount {
+            get
+            {
+                return _keysAmount;
+            }
+            set
+            {
+                if (value < _maxKeysAmount)
+                {
+                    _keysAmount = value;
+                    AddAndShowPickupAmount(_keysAmount, _txtKeysAmount);
+                }
+                else
+                {
+                    _keysAmount = _maxKeysAmount;
+                    AddAndShowPickupAmount(_keysAmount, _txtKeysAmount);
+                }
+            }
+        }
+
+        public int CoinsAmount {
+            get
+            {
+                return _coinsAmount;
+            }
+            set
+            {
+                if (value < _maxCoinsAmount)
+                {
+                    _coinsAmount = value;
+                    AddAndShowPickupAmount(_coinsAmount, _txtCoinsAmount);
+                }
+                else
+                {
+                    _coinsAmount = _maxCoinsAmount;
+                    AddAndShowPickupAmount(_coinsAmount, _txtCoinsAmount);
+                }
+            }
+        }
+
+        public float TimeBeforeBombExplosion { get => _timeBeforeBombExplosion; set => _timeBeforeBombExplosion = value; }
+        public float ExplosionDamage { get => _explosionDamage; set => _explosionDamage = value; }
 
         // Start is called before the first frame update
         void Start()
@@ -83,7 +165,14 @@ namespace IsaacClone
             }
 
             _rigidbody.velocity = new Vector2(horizontal * _speed, vertical * _speed);
-            _collectedText.text = "Items collected: " + CollectedAmount;
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time > _lastBomb + _bombDelay && _bombsAmount > 0)
+            {
+                GameObject bombPrefab = Instantiate(_bombPrefab, gameObject.transform.position, gameObject.transform.rotation) as GameObject;
+                _lastBomb = Time.time;
+                _bombsAmount--;
+                AddAndShowPickupAmount(_bombsAmount, _txtBombsAmount);
+            }
         }
 
         /// <summary>
@@ -154,6 +243,15 @@ namespace IsaacClone
             {
                 spriteRenderer.color = blinkColor;
             }
+        }
+
+        public void AddAndShowPickupAmount(int pickUpAmount, Text txtPickUp)
+        {
+            string amount = Convert.ToString(pickUpAmount);
+
+            if (amount.Length == 1) amount = "0" + amount;
+
+            txtPickUp.text = amount;
         }
     }
 }

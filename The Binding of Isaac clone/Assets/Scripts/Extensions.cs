@@ -11,4 +11,11 @@
         player = 0,
         enemy = 1
     }
+
+    public enum PickUpType : byte
+    {
+        coin = 0,
+        key = 1,
+        bomb = 2
+    }
 }

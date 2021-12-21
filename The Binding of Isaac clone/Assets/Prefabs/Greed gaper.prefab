@@ -47,11 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9811ef5de9cd57548a7ff740ba9d9229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 9
-  _speed: 0.45
+  _health: 200
   _attackDelay: 3
-  _attackRange: 0
   _rigidbody: {fileID: 7039236888346114138}
+  _attackRange: 0
+  _speed: 0.45
 --- !u!50 &7039236888346114138
 Rigidbody2D:
   serializedVersion: 4
