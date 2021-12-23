@@ -17,7 +17,7 @@ namespace IsaacClone
             {
                 switch (_pickUp)
                 {
-                    case PickUpType.coin://todo
+                    case PickUpType.coin:
                         collision.gameObject.GetComponentInParent<PlayerController>().CoinsAmount += (int)_quantity;
                         break;
                     case PickUpType.key:
@@ -25,6 +25,14 @@ namespace IsaacClone
                         break;
                     case PickUpType.bomb:
                         collision.gameObject.GetComponentInParent<PlayerController>().BombsAmount += (int)_quantity;
+                        break;
+                    case PickUpType.heart:
+                        if (collision.gameObject.GetComponentInParent<PlayerController>().Health == collision.gameObject.GetComponentInParent<PlayerController>().HeartContainers)
+                        {
+                            return;
+                        }
+
+                        collision.gameObject.GetComponentInParent<PlayerController>().Health += (int)_quantity;
                         break;
                 }
 

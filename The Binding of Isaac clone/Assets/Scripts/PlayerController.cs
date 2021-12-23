@@ -32,6 +32,8 @@ namespace IsaacClone
         [SerializeField]
         private float _health = 3f;
         [SerializeField]
+        private float _heartContainers = 3f;
+        [SerializeField]
         private float _invincibilityDuration = 1f;
         [SerializeField]
         private float _damage = 3.5f;
@@ -48,6 +50,7 @@ namespace IsaacClone
         private int _keysAmount = 0;
         private int _coinsAmount = 0;
         private Rigidbody2D _rigidbody;
+        private HealthUI _healthUI;
         private float _lastTear;
         private float _lastBomb;
         private bool _isInvincible = false;
@@ -60,6 +63,13 @@ namespace IsaacClone
             }
             set
             {
+                if (value >= _heartContainers)
+                {
+                    _health = _heartContainers;
+                    _healthUI.ChangeHPUI();
+                    return;
+                }
+
                 if (_health > value)
                 {
                     if (value == 0f)
@@ -73,6 +83,8 @@ namespace IsaacClone
                 }
 
                 _health = value;
+
+                _healthUI.ChangeHPUI();
             }
         }
 
@@ -142,11 +154,13 @@ namespace IsaacClone
 
         public float TimeBeforeBombExplosion { get => _timeBeforeBombExplosion; set => _timeBeforeBombExplosion = value; }
         public float ExplosionDamage { get => _explosionDamage; set => _explosionDamage = value; }
+        public float HeartContainers { get => _heartContainers; set => _heartContainers = value; }
 
         // Start is called before the first frame update
         void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
+            _healthUI = GetComponent<HealthUI>();
         }
 
         // Update is called once per frame

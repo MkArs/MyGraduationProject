@@ -16,6 +16,7 @@
     {
         coin = 0,
         key = 1,
-        bomb = 2
+        bomb = 2,
+        heart = 3
     }
 }
