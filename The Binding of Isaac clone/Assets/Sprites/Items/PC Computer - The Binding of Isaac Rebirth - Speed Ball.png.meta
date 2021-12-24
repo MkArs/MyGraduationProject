@@ -4,31 +4,31 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1714742507207820748
-    second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_0
+    second: SpeedBallDown2
   - first:
       213: 6705788230582672515
-    second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_1
+    second: SpeedBallDown1
   - first:
       213: 6459067185238911679
-    second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_2
+    second: SpeedBallRight1
   - first:
       213: -4476447367348619845
-    second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_3
+    second: SpeedBallRight2
   - first:
       213: 4399425881002569023
-    second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_4
+    second: SpeedBallUp1
   - first:
       213: 2897038438581630686
-    second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_5
+    second: SpeedBallUp2
   - first:
       213: 1625185597032288533
-    second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_6
+    second: SpeedBallLeft1
   - first:
       213: 1547891287677026105
-    second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_7
+    second: SpeedBallLeft2
   - first:
       213: -1362164383402663804
-    second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_8
+    second: SpeedBall
   - first:
       213: -5044208686911818965
     second: PC Computer - The Binding of Isaac Rebirth - Speed Ball_9
@@ -270,7 +270,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Speed Ball_1
+      name: SpeedBallDown1
       rect:
         serializedVersion: 2
         x: 4
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Speed Ball_2
+      name: SpeedBallRight1
       rect:
         serializedVersion: 2
         x: 66
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Speed Ball_3
+      name: SpeedBallRight2
       rect:
         serializedVersion: 2
         x: 98
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Speed Ball_4
+      name: SpeedBallUp1
       rect:
         serializedVersion: 2
         x: 132
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Speed Ball_5
+      name: SpeedBallUp2
       rect:
         serializedVersion: 2
         x: 164
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Speed Ball_6
+      name: SpeedBallLeft1
       rect:
         serializedVersion: 2
         x: 196
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Speed Ball_7
+      name: SpeedBallLeft2
       rect:
         serializedVersion: 2
         x: 228
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Speed Ball_8
+      name: SpeedBall
       rect:
         serializedVersion: 2
         x: 117
@@ -433,6 +433,27 @@ TextureImporter:
       bones: []
       spriteID: 4806899d5be981de0800000000000000
       internalID: -1362164383402663804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedBallDown2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 296
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a7d9856c20438e0800000000000000
+      internalID: -1714742507207820748
       vertices: []
       indices: 
       edges: []

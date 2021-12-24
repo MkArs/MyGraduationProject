@@ -19,4 +19,33 @@
         bomb = 2,
         heart = 3
     }
+
+    public enum TearEffectType : byte 
+    { 
+        none = 0,
+        poison = 1,
+        fire = 2,
+        explosionOnContact = 3,
+        beam = 4,
+        homing = 5,
+        spectral = 6,
+        explosionOnTime = 7,
+        acid = 8,
+        fear = 9,
+        charm = 10,
+        booger = 11
+    }
+
+    public enum PlayerEffectType : byte
+    {
+        none = 0,
+        flight = 1,
+        vampirism = 2,
+        stompy = 3,
+        invincibilityOverTime = 4,
+        invincibilityOnHit = 5,
+        charmOnHit = 6,
+        midasTouch = 7,
+        dmgUpOnHit = 8
+    }
 }

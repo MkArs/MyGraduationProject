@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -7573778917628604083
-    second: PC Computer - The Binding of Isaac Rebirth - The Belt_0
+    second: TheBelt
   - first:
       213: 4665588033273497305
-    second: PC Computer - The Binding of Isaac Rebirth - The Belt_1
+    second: TheBeltDown1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Belt_0
+      name: TheBelt
       rect:
         serializedVersion: 2
         x: 5
@@ -126,7 +126,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Belt_1
+      name: TheBeltDown1
       rect:
         serializedVersion: 2
         x: 7
@@ -134,7 +134,7 @@ TextureImporter:
         width: 18
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

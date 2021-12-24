@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8668364889562399580
-    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_0
+    second: CricketsHead
   - first:
       213: -7834340118195913915
     second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_1
@@ -58,28 +58,28 @@ TextureImporter:
     second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_17
   - first:
       213: 7830173604600424651
-    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_18
+    second: CricketsHeadDown1
   - first:
       213: -963306130275606469
-    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_19
+    second: CricketsHeadDown2
   - first:
       213: 5221768892497912377
-    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_20
+    second: CricketsHeadRight1
   - first:
       213: -2290962475154429319
-    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_21
+    second: CricketsHeadRight2
   - first:
       213: -8519987343797041240
-    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_22
+    second: CricketsHeadUp1
   - first:
       213: -8159369639517667774
-    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_23
+    second: CricketsHeadUp2
   - first:
       213: -806649193179039509
-    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_24
+    second: CricketsHeadLeft1
   - first:
       213: -6106842137750298989
-    second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_25
+    second: CricketsHeadLeft2
   - first:
       213: 3457049738789033439
     second: PC Computer - The Binding of Isaac Rebirth - Crickets Head_26
@@ -297,7 +297,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_0
+      name: CricketsHead
       rect:
         serializedVersion: 2
         x: 4
@@ -305,7 +305,7 @@ TextureImporter:
         width: 24
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_18
+      name: CricketsHeadDown1
       rect:
         serializedVersion: 2
         x: 2
@@ -326,7 +326,7 @@ TextureImporter:
         width: 28
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,7 +339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_19
+      name: CricketsHeadDown2
       rect:
         serializedVersion: 2
         x: 34
@@ -347,7 +347,7 @@ TextureImporter:
         width: 28
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -360,7 +360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_20
+      name: CricketsHeadRight1
       rect:
         serializedVersion: 2
         x: 66
@@ -368,7 +368,7 @@ TextureImporter:
         width: 28
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_21
+      name: CricketsHeadRight2
       rect:
         serializedVersion: 2
         x: 98
@@ -389,7 +389,7 @@ TextureImporter:
         width: 28
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -402,7 +402,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_22
+      name: CricketsHeadUp1
       rect:
         serializedVersion: 2
         x: 130
@@ -410,7 +410,7 @@ TextureImporter:
         width: 28
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -423,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_23
+      name: CricketsHeadUp2
       rect:
         serializedVersion: 2
         x: 162
@@ -431,7 +431,7 @@ TextureImporter:
         width: 28
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -444,7 +444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_24
+      name: CricketsHeadLeft1
       rect:
         serializedVersion: 2
         x: 194
@@ -452,7 +452,7 @@ TextureImporter:
         width: 28
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -465,7 +465,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - Crickets Head_25
+      name: CricketsHeadLeft2
       rect:
         serializedVersion: 2
         x: 226
@@ -473,7 +473,7 @@ TextureImporter:
         width: 28
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

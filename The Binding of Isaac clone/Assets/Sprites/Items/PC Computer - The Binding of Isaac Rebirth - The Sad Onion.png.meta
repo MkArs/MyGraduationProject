@@ -4,31 +4,31 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -6456358130274545313
-    second: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_0
+    second: SadOnionDown2
   - first:
       213: -2073689480963952223
-    second: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_1
+    second: SadOnion
   - first:
       213: -2689483945161666336
-    second: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_2
+    second: SadOnionDown1
   - first:
       213: -1257528539180300958
-    second: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_3
+    second: SadOnionRight1
   - first:
       213: -2913764482033367413
-    second: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_4
+    second: SadOnionRight2
   - first:
       213: 2295598389532410112
-    second: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_5
+    second: SadOnionUp1
   - first:
       213: -1888369979611559891
-    second: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_6
+    second: SadOnionUp2
   - first:
       213: 8979259334811948575
-    second: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_7
+    second: SadOnionLeft1
   - first:
       213: 8201305644578246401
-    second: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_8
+    second: SadOnionLeft2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_0
+      name: SadOnionDown2
       rect:
         serializedVersion: 2
         x: 51
@@ -147,7 +147,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_1
+      name: SadOnion
       rect:
         serializedVersion: 2
         x: 8
@@ -168,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_2
+      name: SadOnionDown1
       rect:
         serializedVersion: 2
         x: 7
@@ -176,7 +176,7 @@ TextureImporter:
         width: 38
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_3
+      name: SadOnionRight1
       rect:
         serializedVersion: 2
         x: 100
@@ -197,7 +197,7 @@ TextureImporter:
         width: 29
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_4
+      name: SadOnionRight2
       rect:
         serializedVersion: 2
         x: 145
@@ -218,7 +218,7 @@ TextureImporter:
         width: 29
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_5
+      name: SadOnionUp1
       rect:
         serializedVersion: 2
         x: 184
@@ -239,7 +239,7 @@ TextureImporter:
         width: 38
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_6
+      name: SadOnionUp2
       rect:
         serializedVersion: 2
         x: 228
@@ -260,7 +260,7 @@ TextureImporter:
         width: 38
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,7 +273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_7
+      name: SadOnionLeft1
       rect:
         serializedVersion: 2
         x: 276
@@ -281,7 +281,7 @@ TextureImporter:
         width: 29
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - The Binding of Isaac Rebirth - The Sad Onion_8
+      name: SadOnionLeft2
       rect:
         serializedVersion: 2
         x: 321
@@ -302,7 +302,7 @@ TextureImporter:
         width: 29
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

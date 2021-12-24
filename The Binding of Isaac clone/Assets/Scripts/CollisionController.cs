@@ -11,7 +11,8 @@ namespace IsaacClone
         {
             if (collision.name.ToLower().Contains("tear") && gameObject.tag == _enemyTag && collision.gameObject.GetComponent<TearController>().TearSource == TearSourceType.player)
             {
-                gameObject.GetComponent<BaseEnemy>().Health -= GameObject.Find("Player").GetComponent<PlayerController>().Damage;
+                gameObject.GetComponent<BaseEnemy>().Health -= GameObject.Find("Player").GetComponent<PlayerController>().Damage * 
+                    GameObject.Find("Player").GetComponent<PlayerController>().DamageMultiplier;
                 Destroy(collision.gameObject);
                 return;
             }

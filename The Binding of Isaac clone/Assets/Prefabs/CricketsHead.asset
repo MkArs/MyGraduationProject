@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54f9d810409a04fabeaa700c6a44ec, type: 3}
+  m_Name: CricketsHead
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: -8668364889562399580, guid: e5de975db3b1ece43b3f337e89d3a138,
+    type: 3}
+  _heartContainersAdded: 0
+  _healthAdded: 0
+  _tearsAdded: 0
+  _shotSpeedAdded: 0
+  _speedAdded: 0
+  _tearScaleAdded: 0.05
+  _rangeAdded: 0
+  _damageAdded: 0.5
+  _damageMultiplierAdded: 1.5
+  _itemQuality: 4
+  _itemDescription: DMG UP
+  _itemID: 002
+  _tearEffects: 
+  _playerEffects: 

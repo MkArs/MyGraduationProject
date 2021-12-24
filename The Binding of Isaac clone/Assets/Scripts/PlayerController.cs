@@ -38,6 +38,8 @@ namespace IsaacClone
         [SerializeField]
         private float _damage = 3.5f;
         [SerializeField]
+        private float _damageMultiplier = 1f;
+        [SerializeField]
         private float _explosionDamage = 75f;
         [SerializeField]
         private float _timeBeforeBombExplosion = 2f;
@@ -45,6 +47,7 @@ namespace IsaacClone
         private const int _maxBombsAmount = 99;
         private const int _maxKeysAmount = 99;
         private const int _maxCoinsAmount = 99;
+        private const float _maxHeartContainers = 12f;
 
         private int _bombsAmount = 0;
         private int _keysAmount = 0;
@@ -154,13 +157,32 @@ namespace IsaacClone
 
         public float TimeBeforeBombExplosion { get => _timeBeforeBombExplosion; set => _timeBeforeBombExplosion = value; }
         public float ExplosionDamage { get => _explosionDamage; set => _explosionDamage = value; }
-        public float HeartContainers { get => _heartContainers; set => _heartContainers = value; }
+        public float HeartContainers {
+            get
+            {
+                return _heartContainers;
+            }
+            set
+            {
+                if (value > _maxHeartContainers) return;
+
+                _heartContainers = value;
+                _healthUI.ChangeHPUI();
+            }
+        }
+        public float DamageMultiplier { get => _damageMultiplier; set => _damageMultiplier = value; }
+        public float Speed { get => _speed; set => _speed = value; }
+        public float ShotSpeed { get => _shotSpeed; set => _shotSpeed = value; }
+        public float TearDelay { get => _tearDelay; set => _tearDelay = value; }
+        public GameObject TearPrefab { get => _tearPrefab; set => _tearPrefab = value; }
 
         // Start is called before the first frame update
         void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
             _healthUI = GetComponent<HealthUI>();
+
+            _tearPrefab.transform.localScale = new Vector2(0.05f, 0.05f);
         }
 
         // Update is called once per frame
