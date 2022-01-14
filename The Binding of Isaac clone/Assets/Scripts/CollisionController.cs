@@ -6,12 +6,21 @@ namespace IsaacClone
     {
         private string _enemyTag = "Enemy";
         private string _playerTag = "Player";
+        private string _bossTag = "Boss";
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.name.ToLower().Contains("tear") && gameObject.tag == _enemyTag && collision.gameObject.GetComponent<TearController>().TearSource == TearSourceType.player)
             {
                 gameObject.GetComponent<BaseEnemy>().Health -= GameObject.Find("Player").GetComponent<PlayerController>().Damage * 
+                    GameObject.Find("Player").GetComponent<PlayerController>().DamageMultiplier;
+                Destroy(collision.gameObject);
+                return;
+            }
+
+            if (collision.name.ToLower().Contains("tear") && gameObject.tag == _bossTag && collision.gameObject.GetComponent<TearController>().TearSource == TearSourceType.player)
+            {
+                gameObject.GetComponent<BaseBoss>().Health -= GameObject.Find("Player").GetComponent<PlayerController>().Damage *
                     GameObject.Find("Player").GetComponent<PlayerController>().DamageMultiplier;
                 Destroy(collision.gameObject);
                 return;
@@ -34,7 +43,7 @@ namespace IsaacClone
         /// </remarks>Используется вместо OnCollisionEnter, чтобы игрок вновь получал урон, упираясь во врага.<remarks>
         private void OnCollisionStay2D(Collision2D collision)
         {
-            if (gameObject.tag == _enemyTag && collision.gameObject.tag == _playerTag && collision.gameObject.GetComponent<PlayerController>().IsInvincible == false)
+            if ((gameObject.tag == _enemyTag || gameObject.tag == _bossTag) && collision.gameObject.tag == _playerTag && collision.gameObject.GetComponent<PlayerController>().IsInvincible == false)
             {
                 collision.gameObject.GetComponentInParent<PlayerController>().Health -= 0.5f;
             }

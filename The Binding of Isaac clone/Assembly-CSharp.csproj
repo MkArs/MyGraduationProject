@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BaseBoss.cs" />
     <Compile Include="Assets\Scripts\BaseChaser.cs" />
     <Compile Include="Assets\Scripts\BaseEnemy.cs" />
     <Compile Include="Assets\Scripts\BaseShooter.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\Scripts\ItemGrabber.cs" />
     <Compile Include="Assets\Scripts\ItemRandomizer.cs" />
     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
+    <Compile Include="Assets\Scripts\Monstro.cs" />
     <Compile Include="Assets\Scripts\PickUpController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\TearController.cs" />

@@ -85,13 +85,24 @@ namespace IsaacClone
                 if (collision.gameObject.tag == "Player" && _playerController.IsInvincible == false)
                 {
                     _playerController.Health -= 0.5f;
+
                     return;
                 }
 
                 if (collision.gameObject.tag == "Enemy" && collision.gameObject.GetComponent<BaseEnemy>().IsInvincibleFromExplosions == false)
                 {
-                    collision.gameObject.GetComponent<BaseEnemy>().Health -= _playerController.ExplosionDamage;
-                    collision.gameObject.GetComponent<BaseEnemy>().InvincibleCoroutineStarter();
+                    var baseEnemy = collision.gameObject.GetComponent<BaseEnemy>();
+                    baseEnemy.Health -= _playerController.ExplosionDamage;
+                    baseEnemy.InvincibleCoroutineStarter();
+
+                    return;
+                }
+
+                if (collision.gameObject.tag == "Boss" && collision.gameObject.GetComponent<BaseBoss>().IsInvincibleFromExplosions == false)
+                {
+                    var baseBoss = collision.gameObject.GetComponent<BaseBoss>();
+                    baseBoss.Health -= _playerController.ExplosionDamage;
+                    baseBoss.InvincibleCoroutineStarter();
                 }
             }
         }
