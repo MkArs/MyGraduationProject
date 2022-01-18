@@ -20,6 +20,14 @@
         heart = 3
     }
 
+    //public enum CoinType : byte
+    //{
+    //    penny = 0,
+    //    nickel = 1,
+    //    dime = 2,
+    //    lucky = 3
+    //}
+
     public enum TearEffectType : byte 
     { 
         none = 0,

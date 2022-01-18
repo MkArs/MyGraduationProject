@@ -1767,6 +1767,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1877,6 +1878,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cameraDelay: 0.01
   _cameraSpeed: 15
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57fecf17d2057d49afcd54c0eb7ed15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _penny: {fileID: 8902060615654860851, guid: 846fd696be711b4489ff703f39b0108d, type: 3}
+  _nickel: {fileID: 8902060615654860851, guid: ee2e013b3c75d3c42b9404b899eadc40, type: 3}
+  _dime: {fileID: 8902060615654860851, guid: e0d277a10430ed0448a3d5d92ed0056c, type: 3}
+  _luckyPenny: {fileID: 8902060615654860851, guid: 7bcde08c97184004a89b1c60fbd23601,
+    type: 3}
+  _heart: {fileID: 8902060615654860851, guid: d31dcd830a4ae3c45af03f3f307d7306, type: 3}
+  _bomb: {fileID: 8902060615654860851, guid: 34467c3597889c345ab98bca9aedc818, type: 3}
+  _key: {fileID: 8902060615654860851, guid: c69af3d751ceab34a9c7db060e670e78, type: 3}
 --- !u!1 &523961399
 GameObject:
   m_ObjectHideFlags: 0

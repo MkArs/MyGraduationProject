@@ -105,6 +105,8 @@ namespace IsaacClone
             CloseOrOpenDoors(false);
 
             _isRoomCleared = true;
+
+            Camera.main.GetComponent<PickupRandomizer>().GiveRandomPickup();
         }
     }
 }

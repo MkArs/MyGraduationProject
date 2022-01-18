@@ -23,7 +23,6 @@ namespace IsaacClone
                 {
                     case RoomType.usual:
                         _roomComponent.SpawnEnemies();
-                        //Debug.Log("Enemies spawned");
                         break;
                 }
             }
