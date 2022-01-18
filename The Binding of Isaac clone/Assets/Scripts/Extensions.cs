@@ -48,4 +48,14 @@
         midasTouch = 7,
         dmgUpOnHit = 8
     }
+
+    public enum RoomType : byte
+    {
+        usual = 0,
+        treasure = 1,
+        shop = 2,
+        boss = 3,
+        starting = 4
+    }
+
 }
