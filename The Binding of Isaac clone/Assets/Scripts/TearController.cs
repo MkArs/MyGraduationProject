@@ -57,7 +57,7 @@ namespace IsaacClone
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.name.ToLower().Contains("room") && !collision.name.ToLower().Contains("event")) Destroy(gameObject);
+            if (collision.name.ToLower().Contains("room") && !collision.name.ToLower().Contains("event") || collision.name.ToLower().Contains("rock")) Destroy(gameObject);
         }
     }
 }
