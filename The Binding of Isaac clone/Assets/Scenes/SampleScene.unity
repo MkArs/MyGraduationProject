@@ -2773,7 +2773,7 @@ GameObject:
   - component: {fileID: 808715698}
   - component: {fileID: 808715697}
   m_Layer: 0
-  m_Name: NormalRoom
+  m_Name: UsualRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -16,20 +16,20 @@ namespace IsaacClone
         private GameObject[] _spawnedEnemies;
         private bool _isRoomCleared = false;
 
-        public GameObject[] SpawnedEnemies {
-            get
-            {
-                return _spawnedEnemies;
-            }
-            set
-            {
-                if (value.Length == 0)
-                {
-                    CloseOrOpenDoors(false);
-                    return;
-                }
-            }
-        }
+        //public GameObject[] SpawnedEnemies {
+        //    get
+        //    {
+        //        return _spawnedEnemies;
+        //    }
+        //    set
+        //    {
+        //        if (value.Length == 0)
+        //        {
+        //            CloseOrOpenDoors(false);
+        //            return;
+        //        }
+        //    }
+        //}
 
         public void OpenDoors()
         {
@@ -49,11 +49,12 @@ namespace IsaacClone
 
             foreach (var prefab in _enemies)
             {
-                //GameObject enemy = Instantiate(prefab, _spawnPoints[counter].transform.position, _spawnPoints[counter].transform.rotation) as GameObject;
-                GameObject enemy = Instantiate(prefab, _spawnPoints[counter].transform);
-                _spawnedEnemies[counter] = _enemies[counter];
+                GameObject enemy = Instantiate(prefab, _spawnPoints[counter].transform.position, _spawnPoints[counter].transform.rotation) as GameObject;
+                _spawnedEnemies[counter] = enemy;
                 counter++;
             }
+
+            StartCoroutine(CountEnemies());
         }
 
         public void CloseOrOpenDoors(bool isDoorClosing)
@@ -74,6 +75,36 @@ namespace IsaacClone
                     door.GetComponent<DoorComponent>().OpenOrCloseDoor(isDoorClosing);                  
                 }
             }
+        }
+
+        private void Start()
+        {
+            _spawnedEnemies = new GameObject[_enemies.Length];
+        }
+
+        IEnumerator CountEnemies()
+        {
+            bool areEnemiesDead = false;
+
+            while (areEnemiesDead == false)
+            {
+                foreach (var enemy in _spawnedEnemies)
+                {
+                    areEnemiesDead = true;
+
+                    if (enemy != null)
+                    {
+                        areEnemiesDead = false;
+                        break;
+                    }
+                }
+
+                yield return 0;
+            }
+
+            CloseOrOpenDoors(false);
+
+            _isRoomCleared = true;
         }
     }
 }
