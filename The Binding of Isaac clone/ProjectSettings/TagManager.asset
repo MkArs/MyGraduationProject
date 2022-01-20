@@ -54,3 +54,6 @@ TagManager:
   - name: CreatureHead
     uniqueID: 2043468401
     locked: 0
+  - name: Menu
+    uniqueID: 105016665
+    locked: 0

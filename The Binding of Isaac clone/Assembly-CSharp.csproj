@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\ItemGrabber.cs" />
     <Compile Include="Assets\Scripts\ItemRandomizer.cs" />
     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\Monstro.cs" />
     <Compile Include="Assets\Scripts\PickUpController.cs" />
     <Compile Include="Assets\Scripts\PickupRandomizer.cs" />
