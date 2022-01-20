@@ -194,7 +194,7 @@ namespace IsaacClone
         // Update is called once per frame
         void Update()
         {
-            if (Time.timeScale == 0f) return;
+            if (Time.timeScale == 0f || Camera.main.GetComponent<CameraOperator>().IsCameraMoving) return;
 
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");

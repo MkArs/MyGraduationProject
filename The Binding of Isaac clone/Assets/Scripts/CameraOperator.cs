@@ -11,8 +11,14 @@ namespace IsaacClone
         [SerializeField]
         private float _cameraSpeed = 10f;
 
+        private bool _isCameraMoving = false;
+
+        public bool IsCameraMoving { get => _isCameraMoving; set => _isCameraMoving = value; }
+
         public IEnumerator MoveCamera(Transform goal)
         {
+            _isCameraMoving = true;
+
             if (goal.position.x != transform.position.x)
             {
                 if (goal.position.x > transform.position.x)
@@ -57,6 +63,8 @@ namespace IsaacClone
             }
 
             transform.localPosition = new Vector3(goal.position.x, goal.position.y, transform.position.z);
+
+            _isCameraMoving = false;
         }
     }
 }

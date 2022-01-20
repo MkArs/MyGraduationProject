@@ -1,14 +1,26 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DoorComponent
     - IsaacClone.BaseBoss
+    - IsaacClone.BaseChaser
+    - IsaacClone.BaseShooter
+    - IsaacClone.BaseShootingChaser
     - IsaacClone.Bomb
+    - IsaacClone.CameraOperator
     - IsaacClone.CollisionController
     - IsaacClone.HealthUI
     - IsaacClone.Item
+    - IsaacClone.ItemGrabber
     - IsaacClone.ItemRandomizer
+    - IsaacClone.ItemSpawner
+    - IsaacClone.MenuManager
+    - IsaacClone.Monstro
+    - IsaacClone.PickUpController
+    - IsaacClone.PickupRandomizer
     - IsaacClone.PlayerController
     - IsaacClone.RoomComponent
+    - IsaacClone.RoomEventComponent
     - IsaacClone.TearController
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -33,6 +45,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -74,41 +87,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11510}
     - Class: 114
-      Script: {instanceID: 11628}
+      Script: {instanceID: 11536}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11558}
     - Class: 114
-      Script: {instanceID: 11862}
+      Script: {instanceID: 11632}
     - Class: 114
-      Script: {instanceID: 12142}
+      Script: {instanceID: 11832}
     - Class: 114
-      Script: {instanceID: 12422}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12824}
+      Script: {instanceID: 12146}
     - Class: 114
-      Script: {instanceID: 12850}
+      Script: {instanceID: 12248}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 12426}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12574}
     - Class: 114
-      Script: {instanceID: 13300}
+      Script: {instanceID: 12714}
     - Class: 114
-      Script: {instanceID: 13500}
+      Script: {instanceID: 12796}
     - Class: 114
-      Script: {instanceID: 14070}
+      Script: {instanceID: 12828}
     - Class: 114
-      Script: {instanceID: 14106}
+      Script: {instanceID: 12854}
     - Class: 114
-      Script: {instanceID: 24594}
+      Script: {instanceID: 12870}
     - Class: 114
-      Script: {instanceID: 24596}
+      Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 24600}
+      Script: {instanceID: 12928}
     - Class: 114
-      Script: {instanceID: 24602}
+      Script: {instanceID: 13064}
+    - Class: 114
+      Script: {instanceID: 13306}
+    - Class: 114
+      Script: {instanceID: 13506}
+    - Class: 114
+      Script: {instanceID: 13524}
+    - Class: 114
+      Script: {instanceID: 13602}
+    - Class: 114
+      Script: {instanceID: 13700}
+    - Class: 114
+      Script: {instanceID: 13714}
+    - Class: 114
+      Script: {instanceID: 14078}
+    - Class: 114
+      Script: {instanceID: 14114}
+    - Class: 114
+      Script: {instanceID: 14142}
+    - Class: 114
+      Script: {instanceID: 18448}
+    - Class: 114
+      Script: {instanceID: 18450}
+    - Class: 114
+      Script: {instanceID: 18456}
+    - Class: 114
+      Script: {instanceID: 18458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -196,10 +235,22 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 22b67d8782bad669ae106e69dd91ba04
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: IsaacClone
+    className: PickupRandomizer
+  - hash:
+      serializedVersion: 2
       Hash: 896f4ddc5cbd3f6fa8a70c332cddb47a
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: UnityEngine.U2D
     className: SpriteShapeController
+  - hash:
+      serializedVersion: 2
+      Hash: cb3e1a317a0354c578cda80eaf3c672c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: IsaacClone
+    className: CameraOperator
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -268,7 +319,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 0b4251f1f54b10b7849ed81eb3967fc1
+      Hash: bfb14d166525f13574c4a0a297857b06
     assemblyName: Assembly-CSharp.dll
     namespaceName: IsaacClone
     className: PlayerController
@@ -304,7 +355,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 0bf9cfb8647a8d383c990e2b828c1656
+      Hash: 0c0f6d62ab2e783a2202c382c35c6f4d
     assemblyName: Assembly-CSharp.dll
     namespaceName: IsaacClone
     className: Monstro
@@ -352,7 +403,7 @@ ScriptsOnlyBuild:
     className: ItemGrabber
   - hash:
       serializedVersion: 2
-      Hash: 71b01814f8a63b190415789e6c95f420
+      Hash: 2432c362e5e870760e137c6ea6ad2d9a
     assemblyName: Assembly-CSharp.dll
     namespaceName: IsaacClone
     className: RoomComponent
@@ -418,7 +469,13 @@ ScriptsOnlyBuild:
     className: TearController
   - hash:
       serializedVersion: 2
-      Hash: 8e43ccbace38a3b9e01d834bfeb7bead
+      Hash: 4b8a4a6d8b7a98703e75c8976975734d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 5474418a450d6f96d9912ef35e8b4934
     assemblyName: Assembly-CSharp.dll
     namespaceName: IsaacClone
     className: BaseBoss
@@ -526,6 +583,12 @@ ScriptsOnlyBuild:
     className: BaseChaser
   - hash:
       serializedVersion: 2
+      Hash: fba8755ba53e645c4128995aa787989e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: IsaacClone
+    className: RoomEventComponent
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -608,6 +671,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: f3d67dc26ca0730c2dee481ec6f923f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: IsaacClone
+    className: MenuManager
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb

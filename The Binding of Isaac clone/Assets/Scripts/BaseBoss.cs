@@ -32,6 +32,12 @@ namespace IsaacClone
                 if (value <= 0f)
                 {
                     HpPanel.SetActive(false);
+
+                    if (name.ToLower().Contains("clone") && _isFinal)
+                    {
+                        GameObject.Find("Canvas").GetComponent<MenuManager>().OpenOrExitMenu(true, 0f, "You won !!!");
+                    }
+
                     Destroy(gameObject);
 
                     return;
@@ -55,14 +61,6 @@ namespace IsaacClone
         public void InvincibleCoroutineStarter()
         {
             StartCoroutine(BecomeInvincibleFromExplosions());
-        }
-
-        private void OnDestroy()
-        {
-            if (name.ToLower().Contains("clone") && _isFinal)
-            {
-                GameObject.Find("Canvas").GetComponent<MenuManager>().OpenOrExitMenu(true, 0f, "You won !!!");
-            }
         }
     }
 }

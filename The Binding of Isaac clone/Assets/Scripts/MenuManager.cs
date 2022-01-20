@@ -48,7 +48,7 @@ namespace IsaacClone
             _pnlMenu.SetActive(isOpening);
             Time.timeScale = timeScale;
 
-            if(messege != "")
+            if(messege != "" && _btnContinue != null)
             {
                 Destroy(_btnContinue.gameObject);
                 _txtGameResult.gameObject.SetActive(true);
