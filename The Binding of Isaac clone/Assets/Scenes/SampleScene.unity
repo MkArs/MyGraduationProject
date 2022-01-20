@@ -19837,6 +19837,7 @@ MonoBehaviour:
   _damageMultiplier: 1
   _explosionDamage: 75
   _timeBeforeBombExplosion: 2
+  _luck: 0
 --- !u!50 &2135828070
 Rigidbody2D:
   serializedVersion: 4

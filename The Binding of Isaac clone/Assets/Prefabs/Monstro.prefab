@@ -135,6 +135,7 @@ MonoBehaviour:
   _hpSlider: {fileID: 4537595483774810268, guid: acd4de52a9812c94380300e1ca1b7949,
     type: 3}
   _hpPanel: {fileID: 0}
+  _isFinal: 1
   _timeBeforeLongJump: 1
   _goUpAndDownLongJumpSpeed: 15
   _longJumpSpeed: 1

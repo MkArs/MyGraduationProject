@@ -57,7 +57,7 @@ namespace IsaacClone
                 foreach (var door in _workingDoors)
                 {
                     door.SetActive(true);
-                    door.GetComponent<DoorComponent>().OpenOrCloseDoor(isDoorClosing);                  
+                    door.GetComponent<DoorComponent>().OpenOrCloseDoor(isDoorClosing);
                 }
             }
         }
@@ -91,7 +91,12 @@ namespace IsaacClone
 
             _isRoomCleared = true;
 
-            Camera.main.GetComponent<PickupRandomizer>().GiveRandomPickup();
+            var iterations = GameObject.Find("Player").GetComponent<PlayerController>().Luck + 1;
+
+            for (int i = 0; i < iterations; i++)
+            {
+                Camera.main.GetComponent<PickupRandomizer>().GiveRandomPickup();
+            }
         }
 
         public void SpawnItem()

@@ -19,6 +19,12 @@ namespace IsaacClone
                 {
                     case PickUpType.coin:
                         collision.gameObject.GetComponentInParent<PlayerController>().CoinsAmount += (int)_quantity;
+
+                        if (gameObject.name.ToLower().Contains("lucky"))
+                        {
+                            collision.gameObject.GetComponentInParent<PlayerController>().Luck++;
+                        }
+
                         break;
                     case PickUpType.key:
                         collision.gameObject.GetComponentInParent<PlayerController>().KeysAmount += (int)_quantity;

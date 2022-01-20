@@ -43,6 +43,8 @@ namespace IsaacClone
         private float _explosionDamage = 75f;
         [SerializeField]
         private float _timeBeforeBombExplosion = 2f;
+        [SerializeField]
+        private int _luck = 0;
 
         private const int _maxBombsAmount = 99;
         private const int _maxKeysAmount = 99;
@@ -178,6 +180,7 @@ namespace IsaacClone
         public float TearDelay { get => _tearDelay; set => _tearDelay = value; }
         public GameObject TearPrefab { get => _tearPrefab; set => _tearPrefab = value; }
         public RoomType RoomType { get => _roomType; set => _roomType = value; }
+        public int Luck { get => _luck; set => _luck = value; }
 
         // Start is called before the first frame update
         void Start()
