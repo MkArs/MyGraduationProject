@@ -20,7 +20,7 @@ namespace IsaacClone
         [SerializeField]
         private float _longJumpSpeed = 5f;
         [SerializeField]
-        private float _longJumpCeiling = 5f;
+        private float _longJumpCeiling = 4f;
         [SerializeField]
         private CircleCollider2D _collider;
 
@@ -37,6 +37,8 @@ namespace IsaacClone
             HpSlider.enabled = true;
             HpSlider.maxValue = Health;
             HpSlider.value = Health;
+
+            _longJumpCeiling = _playerPosition.y + _longJumpCeiling;
         }
 
         // Update is called once per frame

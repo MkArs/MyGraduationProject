@@ -11,25 +11,10 @@ namespace IsaacClone
         [SerializeField]
         private GameObject[] _spawnPoints;
         [SerializeField]
-        private GameObject[] _enemies;
+        private GameObject[] _objectsToSpawn;
 
-        private GameObject[] _spawnedEnemies;
+        private GameObject[] _spawnedObjects;
         private bool _isRoomCleared = false;
-
-        //public GameObject[] SpawnedEnemies {
-        //    get
-        //    {
-        //        return _spawnedEnemies;
-        //    }
-        //    set
-        //    {
-        //        if (value.Length == 0)
-        //        {
-        //            CloseOrOpenDoors(false);
-        //            return;
-        //        }
-        //    }
-        //}
 
         public void OpenDoors()
         {
@@ -47,10 +32,10 @@ namespace IsaacClone
 
             CloseOrOpenDoors(true);
 
-            foreach (var prefab in _enemies)
+            foreach (var prefab in _objectsToSpawn)
             {
                 GameObject enemy = Instantiate(prefab, _spawnPoints[counter].transform.position, _spawnPoints[counter].transform.rotation) as GameObject;
-                _spawnedEnemies[counter] = enemy;
+                _spawnedObjects[counter] = enemy;
                 counter++;
             }
 
@@ -79,7 +64,7 @@ namespace IsaacClone
 
         private void Start()
         {
-            _spawnedEnemies = new GameObject[_enemies.Length];
+            _spawnedObjects = new GameObject[_objectsToSpawn.Length];
         }
 
         IEnumerator CountEnemies()
@@ -88,7 +73,7 @@ namespace IsaacClone
 
             while (areEnemiesDead == false)
             {
-                foreach (var enemy in _spawnedEnemies)
+                foreach (var enemy in _spawnedObjects)
                 {
                     areEnemiesDead = true;
 
@@ -107,6 +92,21 @@ namespace IsaacClone
             _isRoomCleared = true;
 
             Camera.main.GetComponent<PickupRandomizer>().GiveRandomPickup();
+        }
+
+        public void SpawnItem()
+        {
+            if (_isRoomCleared) return;
+
+            short counter = 0;
+
+            foreach (var prefab in _objectsToSpawn)
+            {
+                GameObject item = Instantiate(prefab, _spawnPoints[counter].transform.position, _spawnPoints[counter].transform.rotation) as GameObject;
+                counter++;
+            }
+
+            _isRoomCleared = true;
         }
     }
 }

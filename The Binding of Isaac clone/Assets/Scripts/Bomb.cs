@@ -82,6 +82,13 @@ namespace IsaacClone
         {
             if (_didExposionHappen)
             {
+                if (collision.gameObject.name.ToLower().Contains("rock"))
+                {
+                    Destroy(collision.gameObject);
+
+                    return;
+                }
+
                 if (collision.gameObject.tag == "Player" && _playerController.IsInvincible == false)
                 {
                     _playerController.Health -= 0.5f;

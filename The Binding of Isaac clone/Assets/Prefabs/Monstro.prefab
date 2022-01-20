@@ -134,10 +134,11 @@ MonoBehaviour:
   _health: 100
   _hpSlider: {fileID: 4537595483774810268, guid: acd4de52a9812c94380300e1ca1b7949,
     type: 3}
+  _hpPanel: {fileID: 0}
   _timeBeforeLongJump: 1
   _goUpAndDownLongJumpSpeed: 15
   _longJumpSpeed: 1
-  _longJumpCeiling: 5
+  _longJumpCeiling: 4
   _collider: {fileID: 4689415952715825475}
 --- !u!58 &4689415952715825475
 CircleCollider2D:

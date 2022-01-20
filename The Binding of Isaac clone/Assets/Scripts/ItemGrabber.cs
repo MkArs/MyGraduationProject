@@ -15,6 +15,19 @@ namespace IsaacClone
             if (collision.gameObject.tag == _playerTag)
             {
                 _playerController = collision.gameObject.GetComponent<PlayerController>();
+
+                if (_playerController.RoomType == RoomType.shop)
+                {
+                    if (_playerController.CoinsAmount < 5)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        _playerController.CoinsAmount -= 5;
+                    }
+                }
+
                 _item = GetComponent<ItemSpawner>().Item;
 
                 GrabItem();

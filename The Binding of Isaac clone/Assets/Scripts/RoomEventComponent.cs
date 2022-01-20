@@ -15,6 +15,8 @@ namespace IsaacClone
         {
             if (Time.time <= 0.1f) return;
 
+            GameObject.Find("Player").GetComponent<PlayerController>().RoomType = _roomType;
+
             if (collision.tag.ToLower().Contains("player"))
             {
                 StartCoroutine(Camera.main.GetComponent<CameraOperator>().MoveCamera(transform.parent));
@@ -23,6 +25,15 @@ namespace IsaacClone
                 {
                     case RoomType.usual:
                         _roomComponent.SpawnEnemies();
+                        break;
+                    case RoomType.boss:
+                        _roomComponent.SpawnEnemies();
+                        break;
+                    case RoomType.treasure:
+                        _roomComponent.SpawnItem();
+                        break;
+                    case RoomType.shop:
+                        _roomComponent.SpawnItem();
                         break;
                 }
             }

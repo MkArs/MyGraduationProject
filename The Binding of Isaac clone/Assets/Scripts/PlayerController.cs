@@ -57,6 +57,7 @@ namespace IsaacClone
         private float _lastTear;
         private float _lastBomb;
         private bool _isInvincible = false;
+        private RoomType _roomType;
 
         public float Health
         {
@@ -175,6 +176,7 @@ namespace IsaacClone
         public float ShotSpeed { get => _shotSpeed; set => _shotSpeed = value; }
         public float TearDelay { get => _tearDelay; set => _tearDelay = value; }
         public GameObject TearPrefab { get => _tearPrefab; set => _tearPrefab = value; }
+        public RoomType RoomType { get => _roomType; set => _roomType = value; }
 
         // Start is called before the first frame update
         void Start()
