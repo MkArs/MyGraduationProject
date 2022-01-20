@@ -16,10 +16,12 @@ namespace IsaacClone
         private Button _btnRestart;
         [SerializeField]
         private Button _btnExit;
+        [SerializeField]
+        private Text _txtGameResult;
         // Update is called once per frame
         private void Start()
         {
-            _btnContinue.onClick.AddListener(() => ExitMenu()) ;
+            _btnContinue.onClick.AddListener(() => OpenOrExitMenu(false, 1f, "")) ;
             _btnRestart.onClick.AddListener(() => RestartGame());
             _btnExit.onClick.AddListener(() => ExitGame());
         }
@@ -28,22 +30,30 @@ namespace IsaacClone
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                if (GameObject.Find("Player").GetComponent<PlayerController>().Health == 0f) return;
+
                 if (_pnlMenu.activeInHierarchy == true)
                 {
-                    ExitMenu();
+                    OpenOrExitMenu(false, 1f, "");
                 }
                 else
                 {
-                    _pnlMenu.SetActive(true);
-                    Time.timeScale = 0f;
+                    OpenOrExitMenu(true, 0f, "");
                 }
             }
         }
 
-        public void ExitMenu()
+        public void OpenOrExitMenu(bool isOpening, float timeScale, string messege)
         {
-            _pnlMenu.SetActive(false);
-            Time.timeScale = 1f;
+            _pnlMenu.SetActive(isOpening);
+            Time.timeScale = timeScale;
+
+            if(messege != "")
+            {
+                Destroy(_btnContinue.gameObject);
+                _txtGameResult.gameObject.SetActive(true);
+                _txtGameResult.text = messege;
+            }
         }
 
         public void RestartGame()

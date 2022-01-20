@@ -78,7 +78,8 @@ namespace IsaacClone
                 {
                     if (value == 0f)
                     {
-                        Debug.Log("I AM DEAD");
+                        GameObject.Find("Canvas").GetComponent<MenuManager>().OpenOrExitMenu(true, 0f, "You lost !!!");
+                        return;
                     }
                     else
                     {

@@ -13,6 +13,8 @@ namespace IsaacClone
         private Slider _hpSlider;
         [SerializeField]
         private GameObject _hpPanel;
+        [SerializeField]
+        private bool _isFinal = true;
 
         private bool _isInvincibleFromExplosions = false;
         private float _explosionInvincibilityDuration = 0.4f;
@@ -53,6 +55,14 @@ namespace IsaacClone
         public void InvincibleCoroutineStarter()
         {
             StartCoroutine(BecomeInvincibleFromExplosions());
+        }
+
+        private void OnDestroy()
+        {
+            if (name.ToLower().Contains("clone") && _isFinal)
+            {
+                GameObject.Find("Canvas").GetComponent<MenuManager>().OpenOrExitMenu(true, 0f, "You won !!!");
+            }
         }
     }
 }
