@@ -36,6 +36,7 @@ namespace IsaacClone
                     if (name.ToLower().Contains("clone") && _isFinal)
                     {
                         GameObject.Find("Canvas").GetComponent<MenuManager>().OpenOrExitMenu(true, 0f, "You won !!!");
+                        Camera.main.GetComponent<SoundManager>().ContinueMainTheme();
                     }
 
                     Destroy(gameObject);

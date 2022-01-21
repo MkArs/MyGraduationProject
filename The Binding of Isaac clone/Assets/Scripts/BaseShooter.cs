@@ -15,6 +15,8 @@ namespace IsaacClone
         private void Start()
         {
             Player = GameObject.Find("Player");
+
+            _soundManager = Camera.main.GetComponent<SoundManager>();
         }
 
         private void Update()
@@ -34,6 +36,8 @@ namespace IsaacClone
         {
             IsAttackStarted = true;
 
+            _soundManager.PlayMonsterGrunt();
+
             Shoot();
             
             yield return new WaitForSeconds(AttackDelay);
@@ -42,7 +46,7 @@ namespace IsaacClone
         }
 
         public void Shoot()
-        {
+        {       
             GameObject tear = Instantiate(_tearPrefab, transform.position, Quaternion.identity) as GameObject;
             tear.AddComponent<Rigidbody2D>().gravityScale = 0f;
             tear.GetComponent<TearController>().ShotSpeed = _shotSpeed;

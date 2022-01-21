@@ -8,6 +8,8 @@ namespace IsaacClone
     public class PlayerController : MonoBehaviour
     {
         [SerializeField]
+        private SoundManager _soundManager;
+        [SerializeField]
         private float _speed;
         [SerializeField]
         private Text _txtCoinsAmount;
@@ -78,9 +80,12 @@ namespace IsaacClone
 
                 if (_health > value)
                 {
+                    _soundManager.PlayHurt();
+
                     if (value == 0f)
                     {
                         GameObject.Find("Canvas").GetComponent<MenuManager>().OpenOrExitMenu(true, 0f, "You lost !!!");
+                        _soundManager.PlayDeath();
                         return;
                     }
                     else
@@ -232,6 +237,8 @@ namespace IsaacClone
                 (x < 0f) ? Mathf.Floor(x) * _shotSpeed : Mathf.Ceil(x) * _shotSpeed,
                 (y < 0f) ? Mathf.Floor(y) * _shotSpeed : Mathf.Ceil(y) * _shotSpeed
             );
+
+            _soundManager.PlayTearShot();
         }
 
         /// <summary>

@@ -26,12 +26,17 @@ namespace IsaacClone
                     case RoomType.usual:
                         _roomComponent.SpawnEnemies();
                         break;
+
                     case RoomType.boss:
                         _roomComponent.SpawnEnemies();
+                        Camera.main.GetComponent<SoundManager>().PlayBossTheme();
                         break;
+
                     case RoomType.treasure:
+                        if (_roomComponent.IsRoomCleared == false) Camera.main.GetComponent<SoundManager>().PlayTreasureRoomEnter();
                         _roomComponent.SpawnItem();
                         break;
+
                     case RoomType.shop:
                         _roomComponent.SpawnItem();
                         break;

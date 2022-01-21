@@ -10,6 +10,8 @@ namespace IsaacClone
         private Vector2 _startPosition;
         private Vector2 _lastPosition;
         private Vector2 _playerPosition;
+
+        private SoundManager _soundManager;
         [SerializeField]
         private TearSourceType _tearSource;
 
@@ -19,6 +21,8 @@ namespace IsaacClone
         // Start is called before the first frame update
         void Start()
         {
+            _soundManager = Camera.main.GetComponent<SoundManager>();
+
             _player = GameObject.Find("Player");
             _startPosition = gameObject.transform.position;
 
@@ -36,6 +40,7 @@ namespace IsaacClone
                 if (_startPosition == _lastPosition)
                 {
                     Destroy(gameObject);
+                    _soundManager.PlayTearBreak();
                 }
 
                 _lastPosition = _startPosition;
@@ -51,6 +56,7 @@ namespace IsaacClone
                 if (_travelDistance >= _player.gameObject.GetComponent<PlayerController>().Range)
                 {
                     Destroy(gameObject);
+                    _soundManager.PlayTearBreak();
                 }
             }
         }
@@ -58,7 +64,11 @@ namespace IsaacClone
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.name.ToLower().Contains("room") && !collision.name.ToLower().Contains("event") || collision.name.ToLower().Contains("rock") ||
-                collision.name.ToLower().Contains("door")) Destroy(gameObject);
+                collision.name.ToLower().Contains("door"))
+            {
+                Destroy(gameObject);
+                _soundManager.PlayTearBreak();
+            }
         }
     }
 }

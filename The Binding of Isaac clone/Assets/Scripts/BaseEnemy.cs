@@ -21,6 +21,7 @@ namespace IsaacClone
         private bool _isAttackStarted = false;
         private bool _isInvincibleFromExplosions = false;
         private float _explosionInvincibilityDuration = 0.4f;
+        protected SoundManager _soundManager;
 
         public float Health
         {

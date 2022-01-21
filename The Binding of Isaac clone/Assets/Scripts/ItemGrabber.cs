@@ -32,6 +32,8 @@ namespace IsaacClone
 
                 GrabItem();
 
+                Camera.main.GetComponent<SoundManager>().PlayPowerUp();
+
                 Destroy(gameObject);
 
                 return;

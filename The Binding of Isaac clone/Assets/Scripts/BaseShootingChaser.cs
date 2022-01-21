@@ -21,6 +21,8 @@ namespace IsaacClone
 
         private void Start()
         {
+            _soundManager = Camera.main.GetComponent<SoundManager>();
+
             Player = GameObject.Find("Player");
 
             if (_attackDependency == ShootingChaserAttackDependencyType.timed)
@@ -74,6 +76,8 @@ namespace IsaacClone
             }
 
             yield return new WaitForSeconds(_stopDelayBeforeAttacking);
+
+            _soundManager.PlayMonsterCuteGrunt();
 
             Shoot();
 

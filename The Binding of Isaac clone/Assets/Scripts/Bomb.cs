@@ -66,6 +66,8 @@ namespace IsaacClone
 
             int spriteNumber = 0;
 
+            Camera.main.GetComponent<SoundManager>().PlayBombExplodes();
+
             while (spriteNumber < _explosionSprites.Length)
             {
                 _spriteRenderer.sprite = _explosionSprites[spriteNumber];
@@ -85,6 +87,8 @@ namespace IsaacClone
                 if (collision.gameObject.name.ToLower().Contains("rock"))
                 {
                     Destroy(collision.gameObject);
+
+                    Camera.main.GetComponent<SoundManager>().PlayRockCrumble();
 
                     return;
                 }

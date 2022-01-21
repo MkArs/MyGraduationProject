@@ -59,7 +59,7 @@ namespace IsaacClone
         public void RestartGame()
         {
             Time.timeScale = 1f;
-            SceneManager.LoadSceneAsync("SampleScene");
+            SceneManager.LoadScene("SampleScene");
         }
 
         public void ExitGame()

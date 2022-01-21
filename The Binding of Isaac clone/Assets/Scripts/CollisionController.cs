@@ -7,6 +7,12 @@ namespace IsaacClone
         private string _enemyTag = "Enemy";
         private string _playerTag = "Player";
         private string _bossTag = "Boss";
+        private SoundManager _soundManager;
+
+        private void Start()
+        {
+            _soundManager = Camera.main.GetComponent<SoundManager>();
+        }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -15,6 +21,9 @@ namespace IsaacClone
                 gameObject.GetComponent<BaseEnemy>().Health -= GameObject.Find("Player").GetComponent<PlayerController>().Damage * 
                     GameObject.Find("Player").GetComponent<PlayerController>().DamageMultiplier;
                 Destroy(collision.gameObject);
+
+                _soundManager.PlayTearBreak();
+
                 return;
             }
 
@@ -23,6 +32,9 @@ namespace IsaacClone
                 gameObject.GetComponent<BaseBoss>().Health -= GameObject.Find("Player").GetComponent<PlayerController>().Damage *
                     GameObject.Find("Player").GetComponent<PlayerController>().DamageMultiplier;
                 Destroy(collision.gameObject);
+
+                _soundManager.PlayTearBreak();
+
                 return;
             }
 
@@ -32,6 +44,9 @@ namespace IsaacClone
             {
                 gameObject.GetComponent<PlayerController>().Health -= 0.5f;
                 Destroy(collision.gameObject);
+
+                _soundManager.PlayTearBreak();
+
                 return;
             }
         }

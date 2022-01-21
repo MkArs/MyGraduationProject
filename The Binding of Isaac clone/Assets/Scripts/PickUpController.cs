@@ -18,6 +18,19 @@ namespace IsaacClone
                 switch (_pickUp)
                 {
                     case PickUpType.coin:
+                        if (gameObject.name.ToLower().Contains("penny"))
+                        {
+                            Camera.main.GetComponent<SoundManager>().PlayPennyGrab();
+                        }
+                        else if (gameObject.name.ToLower().Contains("nickel"))
+                        {
+                            Camera.main.GetComponent<SoundManager>().PlayNickelGrab();
+                        }
+                        else if (gameObject.name.ToLower().Contains("dime"))
+                        {
+                            Camera.main.GetComponent<SoundManager>().PlayDimeGrab();
+                        }
+
                         collision.gameObject.GetComponentInParent<PlayerController>().CoinsAmount += (int)_quantity;
 
                         if (gameObject.name.ToLower().Contains("lucky"))
@@ -26,17 +39,24 @@ namespace IsaacClone
                         }
 
                         break;
+
                     case PickUpType.key:
+                        Camera.main.GetComponent<SoundManager>().PlayKeyGrab();
+
                         collision.gameObject.GetComponentInParent<PlayerController>().KeysAmount += (int)_quantity;
                         break;
+
                     case PickUpType.bomb:
                         collision.gameObject.GetComponentInParent<PlayerController>().BombsAmount += (int)_quantity;
                         break;
+
                     case PickUpType.heart:
                         if (collision.gameObject.GetComponentInParent<PlayerController>().Health == collision.gameObject.GetComponentInParent<PlayerController>().HeartContainers)
                         {
                             return;
                         }
+
+                        Camera.main.GetComponent<SoundManager>().PlayHPGrab();
 
                         collision.gameObject.GetComponentInParent<PlayerController>().Health += (int)_quantity;
                         break;

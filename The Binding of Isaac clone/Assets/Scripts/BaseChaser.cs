@@ -15,12 +15,18 @@ namespace IsaacClone
 
         private void Start()
         {
+            _soundManager = Camera.main.GetComponent<SoundManager>();
+
             Player = GameObject.Find("Player");
         }
 
         private void Update()
         {
             Chase();
+
+            if (_soundManager.ZombieGrawl.isPlaying) return;
+
+            _soundManager.PlayZombieGrawl();
         }
 
         /// <summary>

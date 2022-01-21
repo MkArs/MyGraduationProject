@@ -16,6 +16,8 @@ namespace IsaacClone
         private GameObject[] _spawnedObjects;
         private bool _isRoomCleared = false;
 
+        public bool IsRoomCleared { get => _isRoomCleared; set => _isRoomCleared = value; }
+
         public void OpenDoors()
         {
             foreach (var door in _workingDoors)
@@ -29,6 +31,8 @@ namespace IsaacClone
             if (_isRoomCleared) return;
 
             short counter = 0;
+
+            Camera.main.GetComponent<SoundManager>().PlayDoorClose();
 
             CloseOrOpenDoors(true);
 
@@ -86,6 +90,8 @@ namespace IsaacClone
 
                 yield return 0;
             }
+
+            Camera.main.GetComponent<SoundManager>().PlayDoorOpen();
 
             CloseOrOpenDoors(false);
 
