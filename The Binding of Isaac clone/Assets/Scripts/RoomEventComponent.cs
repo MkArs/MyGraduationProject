@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Отвечает за события при входе в комнату
+    /// </summary>
     public class RoomEventComponent : MonoBehaviour
     {
         [SerializeField]

@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Все навыки персонажа
+    /// </summary>
     public class PlayerController : MonoBehaviour
     {
         [SerializeField]

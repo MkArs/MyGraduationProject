@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Отвечает за отображение здоровья
+    /// </summary>
     public class HealthUI : MonoBehaviour
     {
         [SerializeField]
@@ -19,6 +20,9 @@ namespace IsaacClone
             _playerController = gameObject.GetComponent<PlayerController>();
         }
 
+        /// <summary>
+        /// Изменить отображение здоровья
+        /// </summary>
         public void ChangeHPUI()
         {
             int paintFullNumber = Mathf.FloorToInt(_playerController.Health);

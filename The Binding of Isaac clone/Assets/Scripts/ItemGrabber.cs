@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Отвечает за поднятие пассивных предметов
+    /// </summary>
     public class ItemGrabber : MonoBehaviour
     {
         private string _playerTag = "Player";
@@ -34,12 +35,17 @@ namespace IsaacClone
 
                 Camera.main.GetComponent<SoundManager>().PlayPowerUp();
 
+                GameObject.Find("Canvas").GetComponent<MenuManager>().ShowItemDescriptionTrigger(_item.name, _item.ItemDescription);
+
                 Destroy(gameObject);
 
                 return;
             }
         }
 
+        /// <summary>
+        /// Поднять предмет
+        /// </summary>
         public void GrabItem()
         {
             _playerController.HeartContainers += _item.HeartContainersAdded;

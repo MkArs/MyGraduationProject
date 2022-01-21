@@ -2,6 +2,9 @@
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Отвечает за движение снарядов
+    /// </summary>
     public class TearController : MonoBehaviour
     {
         private GameObject _player;

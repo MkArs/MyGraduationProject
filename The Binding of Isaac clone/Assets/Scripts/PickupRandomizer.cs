@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Рандомайзер пикапов
+    /// </summary>
     public class PickupRandomizer : MonoBehaviour
     {
         [SerializeField]
@@ -23,6 +24,9 @@ namespace IsaacClone
         [SerializeField]
         private SoundManager _soundManager;
 
+        /// <summary>
+        /// Дать рандомный пикап
+        /// </summary>
         public void GiveRandomPickup()
         {
             var randomNumber = Random.Range(0, 100);

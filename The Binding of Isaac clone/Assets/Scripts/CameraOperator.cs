@@ -1,9 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Оператор камеры
+    /// </summary>
     public class CameraOperator : MonoBehaviour
     {
         [SerializeField]
@@ -15,6 +17,11 @@ namespace IsaacClone
 
         public bool IsCameraMoving { get => _isCameraMoving; set => _isCameraMoving = value; }
 
+        /// <summary>
+        /// Перемещать камеру
+        /// </summary>
+        /// <param name="goal">Цель камеры</param>
+        /// <returns></returns>
         public IEnumerator MoveCamera(Transform goal)
         {
             _isCameraMoving = true;

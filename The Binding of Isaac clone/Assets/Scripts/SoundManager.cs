@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Отвечает за звуки
+    /// </summary>
     public class SoundManager : MonoBehaviour
     {
         [SerializeField]

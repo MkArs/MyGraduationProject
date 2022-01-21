@@ -1,9 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Рандомайзер пассивных предметов
+    /// </summary>
     public class ItemRandomizer : MonoBehaviour
     {
         [SerializeField]
@@ -34,6 +36,10 @@ namespace IsaacClone
             _allItems.Add(4, _itemsWithQuality4);
         }
 
+        /// <summary>
+        /// Заспавнить рандомный предмет
+        /// </summary>
+        /// <returns>Предмет</returns>
         public Item SpawnRandomItem()
         {
             Item item = null;
@@ -81,6 +87,11 @@ namespace IsaacClone
             return item;
         }
 
+        /// <summary>
+        /// Выбрать предмет из пула
+        /// </summary>
+        /// <param name="itemPool">Пул</param>
+        /// <returns>Предмет</returns>
         public Item SpawnRandomItemFromPool(List<Item> itemPool)
         {
             if (itemPool.Count == 0) return null;
@@ -94,6 +105,10 @@ namespace IsaacClone
             return item;
         }
 
+        /// <summary>
+        /// Выбрать пердмет от высшего качества вниз
+        /// </summary>
+        /// <returns>Предмет</returns>
         public Item ChooseItemDownwards()
         { 
             for (int i = _qualityBoundaries.Count - 2; i > -1; i--)
@@ -107,6 +122,10 @@ namespace IsaacClone
             return null;
         }
 
+        /// <summary>
+        /// Выбрать пердмет от низшего качества вверх
+        /// </summary>
+        /// <returns>Предмет</returns>
         public Item ChooseItemUpwards(int start)
         {
             for (int i = start + 1; i < _qualityBoundaries.Count; i++)

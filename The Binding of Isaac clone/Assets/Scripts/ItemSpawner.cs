@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Спавнер предметов
+    /// </summary>
     public class ItemSpawner : MonoBehaviour
     {
         private Item _item;

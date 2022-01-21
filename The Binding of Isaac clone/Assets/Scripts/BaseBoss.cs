@@ -1,10 +1,12 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Базовый класс босса
+    /// </summary>
     public class BaseBoss : MonoBehaviour
     {
         [SerializeField]
@@ -52,6 +54,10 @@ namespace IsaacClone
         public bool IsInvincibleFromExplosions { get => _isInvincibleFromExplosions; set => _isInvincibleFromExplosions = value; }
         public GameObject HpPanel { get => _hpPanel; set => _hpPanel = value; }
 
+        /// <summary>
+        /// Получить неуязвимость от взрывов
+        /// </summary>
+        /// <returns></returns>
         public IEnumerator BecomeInvincibleFromExplosions()
         {
             _isInvincibleFromExplosions = true;
@@ -59,6 +65,9 @@ namespace IsaacClone
             _isInvincibleFromExplosions = false;
         }
 
+        /// <summary>
+        /// Триггер для неуязвимости в случае удаления объекта
+        /// </summary>
         public void InvincibleCoroutineStarter()
         {
             StartCoroutine(BecomeInvincibleFromExplosions());

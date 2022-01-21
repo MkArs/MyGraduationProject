@@ -54,6 +54,10 @@ namespace IsaacClone
             Destroy(gameObject);
         }
 
+        /// <summary>
+        /// Стать неуязвимым от взрывов
+        /// </summary>
+        /// <returns></returns>
         public IEnumerator BecomeInvincibleFromExplosions()
         {
             _isInvincibleFromExplosions = true;
@@ -61,6 +65,9 @@ namespace IsaacClone
             _isInvincibleFromExplosions = false;
         }
 
+        /// <summary>
+        /// Триггер для неуязвимости в случае удаления объекта
+        /// </summary>
         public void InvincibleCoroutineStarter()
         {
             StartCoroutine(BecomeInvincibleFromExplosions());

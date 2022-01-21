@@ -2,6 +2,9 @@
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Отвечает за основные виды колизий в игре
+    /// </summary>
     public class CollisionController : MonoBehaviour
     {
         private string _enemyTag = "Enemy";

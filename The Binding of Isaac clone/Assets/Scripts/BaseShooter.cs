@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Класс врага стрелка
+    /// </summary>
     public class BaseShooter : BaseEnemy
     {
         [SerializeField]
@@ -24,6 +27,9 @@ namespace IsaacClone
             LookForPlayer();
         }
 
+        /// <summary>
+        /// Искать врага
+        /// </summary>
         public void LookForPlayer()
         {
             if (Vector2.Distance(gameObject.transform.position, Player.transform.position) < AttackRange && IsAttackStarted == false)
@@ -32,6 +38,10 @@ namespace IsaacClone
             }
         }
 
+        /// <summary>
+        /// Атаковать
+        /// </summary>
+        /// <returns></returns>
         public IEnumerator Attack()
         {
             IsAttackStarted = true;
@@ -45,6 +55,9 @@ namespace IsaacClone
             IsAttackStarted = false;
         }
 
+        /// <summary>
+        /// Стрелять
+        /// </summary>
         public void Shoot()
         {       
             GameObject tear = Instantiate(_tearPrefab, transform.position, Quaternion.identity) as GameObject;

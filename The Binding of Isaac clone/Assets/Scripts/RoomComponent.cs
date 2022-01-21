@@ -1,9 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Отвечает за отдельную комнату
+    /// </summary>
     public class RoomComponent : MonoBehaviour
     {
         [SerializeField]
@@ -18,14 +20,9 @@ namespace IsaacClone
 
         public bool IsRoomCleared { get => _isRoomCleared; set => _isRoomCleared = value; }
 
-        public void OpenDoors()
-        {
-            foreach (var door in _workingDoors)
-            {
-                door.SetActive(true);
-            }
-        }
-
+        /// <summary>
+        /// Заспавнить врагов
+        /// </summary>
         public void SpawnEnemies()
         {
             if (_isRoomCleared) return;
@@ -46,6 +43,10 @@ namespace IsaacClone
             StartCoroutine(CountEnemies());
         }
 
+        /// <summary>
+        /// Открыть или закрыть двери
+        /// </summary>
+        /// <param name="isDoorClosing">Закрывается ли дверь</param>
         public void CloseOrOpenDoors(bool isDoorClosing)
         {
             if (isDoorClosing)
@@ -71,6 +72,10 @@ namespace IsaacClone
             _spawnedObjects = new GameObject[_objectsToSpawn.Length];
         }
 
+        /// <summary>
+        /// Сосчитать врагов
+        /// </summary>
+        /// <returns></returns>
         IEnumerator CountEnemies()
         {
             bool areEnemiesDead = false;
@@ -105,6 +110,9 @@ namespace IsaacClone
             }
         }
 
+        /// <summary>
+        /// Заспавнить предмет
+        /// </summary>
         public void SpawnItem()
         {
             if (_isRoomCleared) return;

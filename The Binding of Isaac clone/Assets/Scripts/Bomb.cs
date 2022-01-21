@@ -1,9 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Бомба
+    /// </summary>
     public class Bomb : MonoBehaviour
     {
         [SerializeField]

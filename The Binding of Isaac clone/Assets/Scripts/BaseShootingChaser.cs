@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Стреляющий враг преследователь
+    /// </summary>
     public class BaseShootingChaser : BaseChaser
     {
         [SerializeField]
@@ -36,6 +39,9 @@ namespace IsaacClone
             Chase();
         }
 
+        /// <summary>
+        /// Преследовать
+        /// </summary>
         public override void Chase()
         {
             if (_canMove)
@@ -66,6 +72,10 @@ namespace IsaacClone
             }
         }
 
+        /// <summary>
+        /// Атаковать
+        /// </summary>
+        /// <returns></returns>
         public override IEnumerator Attack()
         {
             IsAttackStarted = true;
@@ -90,7 +100,10 @@ namespace IsaacClone
 
             IsAttackStarted = false;
         }
-
+        
+        /// <summary>
+        /// Стрелять
+        /// </summary>
         public void Shoot()
         {
             GameObject tear = Instantiate(_tearPrefab, transform.position, Quaternion.identity) as GameObject;

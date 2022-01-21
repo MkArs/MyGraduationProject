@@ -1,10 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Монстро
+    /// </summary>
     public class Monstro : BaseBoss
     {
         private GameObject _player;
@@ -51,7 +52,10 @@ namespace IsaacClone
                 StartCoroutine(MakeLongJump());
             }
         }
-
+         
+        /// <summary>
+        /// Посмотреть на игрока
+        /// </summary>
         public void LookAtPlayer()
         {
             if (_player.gameObject.transform.localPosition.x > gameObject.transform.localPosition.x)
@@ -63,6 +67,10 @@ namespace IsaacClone
             _spriteRenderer.flipX = false;
         }
 
+        /// <summary>
+        /// Сделать длинный прыжок
+        /// </summary>
+        /// <returns></returns>
         public IEnumerator MakeLongJump()
         {
             _isMidJump = true;

@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Пассивный предмет
+    /// </summary>
     [CreateAssetMenu(menuName = "Items", fileName = "New Item")]
     public class Item : ScriptableObject
     {
@@ -48,5 +49,6 @@ namespace IsaacClone
         public float RangeAdded { get => _rangeAdded; set => _rangeAdded = value; }
         public float DamageAdded { get => _damageAdded; set => _damageAdded = value; }
         public float DamageMultiplierAdded { get => _damageMultiplierAdded; set => _damageMultiplierAdded = value; }
+        public string ItemDescription { get => _itemDescription; set => _itemDescription = value; }
     }
 }

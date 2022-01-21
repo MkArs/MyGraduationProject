@@ -2,6 +2,9 @@
 
 namespace IsaacClone
 {
+    /// <summary>
+    /// Отвечает за подбор одноразовых предметов 
+    /// </summary>
     public class PickUpController : MonoBehaviour
     {
         [SerializeField]
